@@ -41,4 +41,4 @@ if __name__ == "__main__":
     parser.add_argument("--json", action="store_true", help="Print formatted JSON")
     args = parser.parse_args()
     result = snapshot()
-    print(json.dumps(result, indent=2) if args.json else "\\n".join(f"{k}: {v}" for k, v in result.items()))
+    print(json.dumps(result, indent=2) if args.json else "\n".join(f"{k}: {v}" for k, v in result.items()))
